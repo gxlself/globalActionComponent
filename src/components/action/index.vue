@@ -4,6 +4,7 @@ export default {
   name: 'Action',
   data () {
     return {
+      public: process.env.BASE_URL,
       actions: ['create', 'open', 'view', 'edit', 'cut', 'copy', 'ding', 'setting', 'share'],
       disables: [],
       drops: {},

@@ -2,12 +2,12 @@ const cdn = require('./config/cdn')
 const HappyPack = require('happypack')
 const os = require('os')
 const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
-var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
-
 process.env.VUE_APP_TITLE = 'template'
+process.env.BASE_URL = 'https://gxlself.com/global'
 
 module.exports = {
   // 开发环境每次保存时是否输出为eslint编译警告
+  publicPath: '/global',
   lintOnSave: true,
   runtimeCompiler: true,
   productionSourceMap: false,
@@ -56,13 +56,6 @@ module.exports = {
         }
       })
     })
-
-    config.plugin('html')
-      .tap(args => {
-        return [{
-          inlineSource: '.(js|css)$' // embed all javascript and css inline
-        }]
-      })
   },
   // 打包组件时打开
   css: { extract: false },
@@ -74,8 +67,7 @@ module.exports = {
           id: 'babel',
           loaders: ['babel-loader?cacheDirectory=true'],
           threadPool: happyThreadPool
-        }),
-        new HtmlWebpackInlineSourcePlugin()
+        })
       ]
     }
   }
