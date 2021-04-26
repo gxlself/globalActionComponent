@@ -10,6 +10,7 @@
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.6.5",
     "es6-promise": "^4.2.8",
+    "html-webpack-inline-source-plugin": "^0.0.10",
     "js-cookie": "^2.2.1",
     "vue": "^2.6.12"
   },

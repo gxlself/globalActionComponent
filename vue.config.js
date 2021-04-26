@@ -1,8 +1,8 @@
 const cdn = require('./config/cdn')
-const Webpack = require('webpack')
 const HappyPack = require('happypack')
 const os = require('os')
 const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
+var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
 
 process.env.VUE_APP_TITLE = 'template'
 
@@ -56,6 +56,13 @@ module.exports = {
         }
       })
     })
+
+    config.plugin('html')
+      .tap(args => {
+        return [{
+          inlineSource: '.(js|css)$' // embed all javascript and css inline
+        }]
+      })
   },
   // 打包组件时打开
   css: { extract: false },
@@ -67,7 +74,8 @@ module.exports = {
           id: 'babel',
           loaders: ['babel-loader?cacheDirectory=true'],
           threadPool: happyThreadPool
-        })
+        }),
+        new HtmlWebpackInlineSourcePlugin()
       ]
     }
   }
