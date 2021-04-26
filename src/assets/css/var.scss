@@ -1,0 +1,60 @@
+// 主题
+$theme-default: #F7F8FA;
+
+// 统一四种类型样式
+$primary: #3855ee;
+$success: #67c23a;
+$danger: #f56c6c;
+$warning: #ffb76a;
+$info: #f6f6f8;
+
+// 字体颜色
+$f1c: #2a303c;
+$f2c: #a8a8be;
+$f3c: #ccccd9;
+$f4c: #8c8985;
+$f5c: #565682;
+$f6c: #222222;
+$f7c: #000000;
+$f8c: #ffffff;
+$f9c: #c4c4c4;
+$f10c:  rgba(33,33,69,.2);
+
+// 背景色
+$b1c: #f6f6f6;
+$b2c: #ffffff;
+$b3c: #f7f8fa;
+$b4c:  #dee1ee;
+$b5c: #eaedf9;
+$b6c: #e6e6fc;
+$b7c: rgba(86,86,130,0.05);
+$b8c: rgba(86,86,130,0.05);
+$b9c: rgba(246,246,248, .3);
+
+$table: rgba(207,207,239,.4);
+$b_active: #263790;
+
+// 阴影
+$shadow1: 0px 6px 10px 0px rgba( 90, 90, 100, 0.1);
+$shadow2: 0px 3px 10px 0px rgba(90, 90, 100, 0.05);
+$shadow3: 0px 3px 6px 0px rgba(86,86,130, 0.15);
+$shadow4: 0 7px 11px -8px rgba(0, 0, 0, 0.5);
+$shadow5: 0px 6px 10px rgba(90, 90, 100, 0.1);
+$shadow6: 0px 3px 6px rgba(86, 86, 130, 0.15);
+
+// 栅格变量
+$pc: 96px;
+$pad: 56px;
+$mobile: 100vw / 12;
+
+// 边框
+$bd1: #e5e9ed;
+$bd2: #eaedf9;
+$bd3: #000000;
+$bd4: #DCE1F8;
+$bd5: #F1F1F3;
+
+// 字体
+$font-family-chinese: "FangZhengLanTingHeiJianTi-1","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+$font-family-english: "Barlow", "FangZhengLanTingHeiJianTi-1","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+$font-family-number: "Barlow", "FangZhengLanTingHeiJianTi-1","Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;

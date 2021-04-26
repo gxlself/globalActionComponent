@@ -1,0 +1,51 @@
+@import './var.scss';
+
+@mixin lagerScreen {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width : 720px) and (max-width : 1200px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+/** 栅格化 12格 **/
+@for $idx from 1 through 12 {
+  .lx-col-#{$idx} {
+    @include lagerScreen{
+      width: $pc * $idx;
+    }
+    @include pc{
+      width: $pc * $idx;
+    }
+    @include pad{
+      width: $pad * $idx;
+    }
+    @include mobile{
+      width: $mobile * $idx;
+    }
+    &.keep-pc{
+      @include pad{
+        width: $pc * $idx;
+      }
+      @include mobile{
+        width: $pc * $idx;
+      }
+    }
+  }
+}

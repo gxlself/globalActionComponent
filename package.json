@@ -1,0 +1,41 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "author": "gxlself@gmail.com",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.6.5",
+    "es6-promise": "^4.2.8",
+    "js-cookie": "^2.2.1",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-advanced": "^4.0.7",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "happypack": "5.0.1",
+    "node-sass": "^4.12.0",
+    "postcss-aspect-ratio-mini": "^1.1.0",
+    "postcss-px-to-viewport": "git+https://github.com/evrone/postcss-px-to-viewport.git",
+    "postcss-viewport-units": "^0.1.6",
+    "sass-loader": "^8.0.2",
+    "viewport-units-buggyfill": "^0.6.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

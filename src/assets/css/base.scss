@@ -1,0 +1,22 @@
+@import './var.scss';
+@import './flex.scss';
+@import './function.scss';
+
+#app {
+	font-family: $font-family-english;
+	-webkit-font-smoothing: antialiased;
+}
+
+body{
+    position: relative;
+}
+
+@include mobile{
+    .li-message{
+        min-width: auto;
+		width: auto;
+    }
+    .li-message-box{
+        width: 300px;
+    }
+}

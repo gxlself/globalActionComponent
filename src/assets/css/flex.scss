@@ -1,0 +1,62 @@
+@mixin FLex() {
+	display: flex;
+}
+@mixin FLexWrap() {
+	flex-wrap: wrap;
+}
+.flex, 
+.flex1,
+.flex-center, 
+.flex-between,
+.flex-around,
+.flex-start,
+.flex-end,
+.flex-align-center,
+.flex-align-end,
+.flex-row,
+.flex-row-reverse,
+.flex-cloumn{
+	@include FLex;
+	@include FLexWrap;
+}
+.inline-flex{
+	display: inline-flex;
+	@include FLexWrap;
+}
+.flex-center{
+	justify-content: center;
+}
+.flex-between{
+	justify-content: space-between;
+}
+.flex-around{
+	justify-content: space-around;
+}
+.flex-start{
+	justify-content: flex-start;
+}
+.flex-end{
+	justify-content: flex-end;
+}
+.flex-align-center{
+	align-items: center;
+}
+.flex-align-end{
+	align-items: flex-end;
+}
+.flex-row{
+	flex-direction: row;
+}
+.flex-row-reverse{
+	flex-direction: row-reverse;
+}
+.flex-cloumn{
+	flex-direction: column;
+}
+.flex-nowrap{
+	@include FLex;
+	flex-wrap: nowrap;
+}
+.flex1{
+    flex: 1;
+}
