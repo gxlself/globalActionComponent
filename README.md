@@ -1,8 +1,8 @@
 # 全局组件构思到开发,涉及多种开发思想
 
 
-> 具体实现demo
-[demo](https://demo.global.gxlself.com)
+> 具体实现
+[demo](https://gxlself.com/global/#/home)
 [github](https://github.com/gxlself/globalActionComponent)
 
 实际业务开发中有这样一个场景,如标题图需求说明所示,多个页面需要,而且是动态的,不仅如此,点击每页对应列表某个按钮,就需要对应在下方展示.
